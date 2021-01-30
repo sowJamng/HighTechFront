@@ -7,4 +7,10 @@
 .card-title{
 color:blue;
 }
+.card{
+  height: 30%;
+}
+.h-100{
+  height: 20%;
+}
 
