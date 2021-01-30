@@ -12,10 +12,7 @@ before_script:
   - sudo apt-get install -y libappindicator1 fonts-liberation
 script:
    - npm run build
-deployer:
-  skip_cleanup:true
-  github_token:$GITHUB_TOKEN
-  local_dir:dist
+
 
 
 
