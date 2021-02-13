@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { SSL_OP_NO_TLSv1_1 } from 'constants';
 import { Categorie } from '../model/categorie';
 
 @Injectable({

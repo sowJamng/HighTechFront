@@ -14,7 +14,6 @@ import { FormsModule } from '@angular/forms';
 import { SigninComponent } from './components/aut/signin/signin.component';
 import { AuthService } from './services/auth.service';
 import { ArticleService } from './services/article.service';
-import { AdminComponent } from './components/admin/admin.component';
 import { HttpClientModule} from '@angular/common/http';
 
 
@@ -28,8 +27,7 @@ import { HttpClientModule} from '@angular/common/http';
     ArticleUpdateComponent,
     SignoutComponent,
     SigninComponent ,
-    ArticleDetailsComponent,
-    AdminComponent
+    ArticleDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,24 +1,4 @@
-<!-- <mat-grid-list cols="1" >
-  <form #f="ngForm" (ngSubmit)="f.form.valid && connexion()"  >
-    <div class="row">
-    <div class=" col-offset-2 col-lg-4 form-group">
-    <label for="floatingInputInvalid" >Email</label>
-    <input type="email " id="floatingInputInvalid" required [(ngModel)]="admi.email" #email="ngModel" [ngModelOptions]="{standalone: true}"/>
-    <div *ngIf="f.submitted && email.invalid " >Erreur sur Email</div>
-    </div>
-    <div class="  col-lg-2 col-lg-4 form-group">
-    <label >Password</label>
-    <input  required [(ngModel)]="admi.password" class="visually-hidden" #password="ngModel" [ngModelOptions]="{standalone: true}"
-    ngClass="{'is-invalid': f.submitted && password.invalid}" required />
-    <div *ngIf="f.submitted &&password.errors">mot de passe invalide</div>
-  </div>
 
-  </div>
-  <div class="col-auto">
-    <button [disabled]="!f.valid" type="submit" class="btn btn-primary mb-3">se Connecter</button>
-  </div>
-  </form>
-</mat-grid-list> -->
 <div class=container>
   <div class="row">
 <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
@@ -62,19 +42,3 @@
 </mat-vertical-stepper>
 </div>
 </div>
-<!-- <table>
-  <thead>
-    <tr><th>Email</th><th>Password</th></tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let admin of admins" >
-      <td>{{admin.nom}}</td>
-      <td>{{admin.prenom}}</td>
-      <td>{{admin.email}}</td>
-      <td>{{admin.password}}</td>
-      <td>{{admin.adress}}</td>
-    </tr>
-  </tbody>
-</table> -->
-
-

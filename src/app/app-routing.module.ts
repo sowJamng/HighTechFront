@@ -1,4 +1,3 @@
-import { AppComponent } from './app.component';
 import { NgModule} from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SigninComponent } from './components/aut/signin/signin.component';
