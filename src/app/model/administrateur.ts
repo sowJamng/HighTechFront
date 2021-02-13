@@ -3,5 +3,5 @@ export interface Administrateur {
   prenom:string;
   adress:string;
  email:string;
- password:string;
+ pass:string;
 }

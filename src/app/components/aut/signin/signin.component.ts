@@ -17,7 +17,7 @@ export class SigninComponent implements OnInit {
     prenom:'',
     adress:'',
     email:'',
-    password:''
+    pass:''
   }
   constructor(private admin:AuthService) { }
 
