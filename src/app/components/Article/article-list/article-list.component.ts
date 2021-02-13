@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../../../model/article';
-import { ArticleService } from '../../../serives/article.service';
+import { ArticleService } from '../../../services/article.service';
 
 @Component({
   selector: 'app-article-list',
@@ -9,7 +9,7 @@ import { ArticleService } from '../../../serives/article.service';
 })
 export class ArticleListComponent implements OnInit {
  articles:Article[]=[];
-
+ plus:number=0;
   constructor(private articleservice:ArticleService) {
 
   }
@@ -20,6 +20,10 @@ export class ArticleListComponent implements OnInit {
 
   getArticles():Article[]{
     return this.articleservice.getAllArticles();
+  }
+
+  addCard():void{
+    alert("ajouté au panier")
   }
 
 
