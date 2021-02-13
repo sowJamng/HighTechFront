@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Administrateur } from './model/administrateur';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +7,13 @@ import { Administrateur } from './model/administrateur';
 })
 export class AppComponent {
 
-
+panier:number=0;
  public clickEventHandler(){
-    
-  }
 
+  }
+handleplus():void{
+  this.panier++;
+}
 
   title = 'HightTechFront';
 }

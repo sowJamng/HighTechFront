@@ -4,13 +4,15 @@
   max-width: 100%;
   height: auto;
 }
-.card-title{
+.mat-card-title{
 color:blue;
+text-align: center;
 }
-.card{
-  height: 30%;
-}
-.h-100{
-  height: 20%;
+.parent {
+  overflow: hidden;
 }
 
+.md-card-image {
+  width: 300px;
+  height: 150px;
+}

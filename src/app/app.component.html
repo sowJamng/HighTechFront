@@ -1,8 +1,8 @@
-  <div class="wrapper">
+   <div class="wrapper">
 
-      <nav class=" navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <!--navanavbar navbar-dark bg-primary-->
-        <div class="container">
+     <nav class=" navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <!-- navanavbar navbar-dark bg-primary -->
+         <div class="container">
           <button mat-fab color="primary" class="navbar-brand">HighTech Sop</button>
 <a routerLink="employees" class="nav-link" routerLinkActive="active"><mat-icon class="mat-18" >home</mat-icon>Home</a>
     <div class="btn-group">
@@ -10,9 +10,9 @@
         Ordinateurs
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" routerLink="#">PC Portable</a>
-        <a class="dropdown-item" routerLink="#">PC Burreau</a>
-        <a class="dropdown-item" routerLink="#">Accessoires</a>
+        <a class="dropdown-item" routerLink="/articles"  routerLinkActive="clickEventHandler()">PC Portable</a>
+        <a class="dropdown-item" routerLink="/articles"  routerLinkActive="clickEventHandler()">PC Burreau</a>
+        <a class="dropdown-item" routerLink="/articles"  routerLinkActive="clickEventHandler()">Accessoires</a>
       </div>
     </div>
     <div class="btn-group">
@@ -20,9 +20,9 @@
        Telephones
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" routerLink="#">Smart Phone</a>
-        <a class="dropdown-item" routerLink="#">Telephone Fix</a>
-        <a class="dropdown-item" routerLink="#">Accesoires</a>
+        <a class="dropdown-item" routerLink="/articles" >Smart Phone</a>
+        <a class="dropdown-item" routerLink="/articles"  >Telephone Fix</a>
+        <a class="dropdown-item" routerLink="/articles"  >Accesoires</a>
       </div>
     </div>
     <div class="btn-group">
@@ -31,26 +31,39 @@
       </a>
       <div class="dropdown-menu">
         <a routerLink=""class="dropdown-item" routerLink="#">Disque Dur</a>
-        <a  class="dropdown-item" routerLink="#">Clé USB</a>
-        <a class="dropdown-item" routerLink="#">Accessoires</a>
+        <a  class="dropdown-item" routerLink="/articles" >Clé USB</a>
+        <a class="dropdown-item" routerLink="/articles" >Accessoires</a>
       </div>
     </div>
 
-    <a routerLink="connexion" class=" nav-link " routerLinkActive="active"><mat-icon>account_circle</mat-icon><br/>Connexion</a>
-    <a routerLink="#"><span matBadge="0" matBadgeColor="accent" matBadgeSize="small" matBadgeOverLap="false">
+    <a routerLink="/signin"  routerLinkActive="active" class=" nav-link " routerLinkActive="active"><mat-icon>account_circle</mat-icon><br/>Connexion</a>
+    <a routerLink="/articles" routerLinkActive="active"><span [matBadge]="panier" matBadgeColor="accent" matBadgeSize="small" matBadgeOverLap="false">
       <mat-icon>shopping_cart</mat-icon></span></a>
   </div></nav>
 
-   <div> <app-article-list></app-article-list> </div>
+       <!-- inscription ,Connexion ,Deconnexion -->
+      <!-- <ul class="nav navbar-nav navbar-right">
+           <li><a href="#"><span class="glyphicon glyphicon-user"></span>SignUp</a></li>
+           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+           <li><a class="clickable"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+     </ul> -->
 
-   <footer class="py-5 bg-dark">
-     <div class="container">
-       <p class="m-0 text-center text-white">HighTech Shop Copyright Janvier 2021</p>
-     </div>
-     <router-outlet></router-outlet>
+  </div>
 
+
+<router-outlet></router-outlet>
+
+
+
+
+
+
+  <!-- <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">HighTech Shop Copyright Janvier 2021</p>
+    </div>
   </footer>
 
-</div>
+</div> -->
 
 

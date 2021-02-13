@@ -10,6 +10,16 @@ import {LOCALE_ID} from '@angular/core';
 import { ArticleDetailsComponent } from './components/Article/article-details/article-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import  {MaterialModule} from './material/material.module';
+import { FormsModule } from '@angular/forms';
+import { SigninComponent } from './components/aut/signin/signin.component';
+import { AuthService } from './services/auth.service';
+import { ArticleService } from './services/article.service';
+import { AdminComponent } from './components/admin/admin.component';
+import { HttpClientModule} from '@angular/common/http';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,18 +27,24 @@ import  {MaterialModule} from './material/material.module';
     ArticleAddComponent,
     ArticleUpdateComponent,
     SignoutComponent,
-    ArticleDetailsComponent
+    SigninComponent ,
+    ArticleDetailsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [{
     provide: LOCALE_ID,
    useValue: 'fr' // 'de' for Germany, 'fr' for France ...
-  }
+  },
+  AuthService,
+  ArticleService
   ],
   bootstrap: [AppComponent]
 
