@@ -14,13 +14,13 @@ export class AuthService {
     prenom:"maodo",
     adress:"77500 Chelles",
     email:"maodo@gmail.com",
-    password:"passer1234",
+    pass:"passer1234",
 
   }
   constructor(private http:HttpClient) { }
 
 connexion(adm:Administrateur): void{
-  if(adm.email===this.admin.email && adm.password===this.admin.password)
+  if(adm.email===this.admin.email && adm.pass===this.admin.pass)
     alert("autentification reussit avec succes");
   else
     alert("erreur d'authentification");
